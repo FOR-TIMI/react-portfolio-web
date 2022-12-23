@@ -11,7 +11,7 @@
 }
 
 :root{
-    --color-bg: #203541;
+    --color-bg: #152238;
     --color-bg-variant: #374955;
     --color-primary: #ecc92d;
     --color-primary-variant: rgba(77,181,255,0.4);
@@ -53,7 +53,7 @@
  }
 
  h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
  }
 
  section{
@@ -130,6 +130,9 @@
  @media  screen and (max-width: 600px) {
     .container{
         width: var(--contianer-width-sm);
+    }
+    h1{
+      font-size: 1.4rem;
     }
 
     section > h2{

@@ -39,14 +39,20 @@ header{
 
 
 /* header Image || me  */
-.me{
+.logo {
+    height: 30rem;
+    left: calc(50% - 15rem);
+    margin-top: 4rem;
+    position: absolute;
+    width: 30rem;
+}
+
+/* .me img{
+    margin-top: 4rem;
     width: 22rem;
     height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
-}
+} */
+
 
 
 /* Scroll down */
@@ -63,7 +69,7 @@ header{
 
  @media  screen and (max-width: 1024px) {
    header{
-    height: 68vh;
+    height: 80vh;
    }
 }
  /* Media Queries (phones) */
@@ -73,14 +79,29 @@ header{
         height: 100vh;
     }
     
-
-    .me{
+    
+    .logo{
         margin-top: 0;
+
+    }
+
+    .logo-item{
+         height: 15rem;
+         width: 15rem;
     }
 
     .header__socials,
     .scroll__down{
         display: none;
     }
+}
+
+@media  screen and (max-width: 400px) {
+
+    .logo{
+        left: calc(50% - 11rem);
+        width: 23rem;
+    }
+
 }
 
