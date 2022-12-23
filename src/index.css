@@ -11,12 +11,12 @@
 }
 
 :root{
-    --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
+    --color-bg: #203541;
+    --color-bg-variant: #374955;
+    --color-primary: #ecc92d;
     --color-primary-variant: rgba(77,181,255,0.4);
     --color-white: #fff;
-    --color-light: rgba(255,255,255,0.6)
+    --color-light: rgba(255,255,255,0.6);
 
     --container-width-lg:75%;
     --contianer-width-md:86%;
@@ -38,7 +38,7 @@
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
+    /* background-image: url(../src/assets/bg-texture.png); */
  }
 
 
@@ -71,7 +71,7 @@
  }
 
  .text-light{
-    color: var(--color-primary)
+    color: var(--color-light)
  }
 
 
@@ -96,9 +96,16 @@
  }
 
  .btn:hover{
-    background: var(--color-primary);
+    background: var(--color-white);
     color: var(--color-bg);
+    border-color: transparent;
  }
+ 
+ .btn-primary{
+   background: var(--color-primary);
+   color: var(--color-bg);
+ }
+
 
  img{
     display: block;
@@ -108,7 +115,7 @@
 
  /* Media Queries (Tablets ) */
 
- @media  screen and(max-width: 1024px) {
+ @media  screen and (max-width: 1024px) {
     .container{
         width: var(--contianer-width-md);
     }
@@ -120,7 +127,7 @@
 }
  /* Media Queries (phones) */
 
- @media  screen and(max-width: 600px) {
+ @media  screen and (max-width: 600px) {
     .container{
         width: var(--contianer-width-sm);
     }
