@@ -3,7 +3,9 @@ import './references.css'
 
 const References = () => {
   return (
-    <div>References</div>
+    <section id='references'>
+        References
+    </section >
   )
 }
 

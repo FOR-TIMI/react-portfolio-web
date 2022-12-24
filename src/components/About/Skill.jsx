@@ -14,7 +14,6 @@ const Skill = () => {
   return (
     <TagSphere
     style={{
-        overflow: "hidden",
         marginBottom: "2.5rem"
     }}
     tags={tags}

@@ -20,7 +20,7 @@
 
     --container-width-lg:75%;
     --contianer-width-md:86%;
-    --container-width-ms: 90%;
+    --contianer-width-sm: 90%;
     
 
     --transition: all 400ms ease;
@@ -58,7 +58,6 @@
 
  section{
     margin-top: 8rem;
-    height: 100vh;
  }
 
  section > h2, section > h5{
