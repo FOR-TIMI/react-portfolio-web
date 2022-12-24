@@ -15,22 +15,27 @@ const App = () => {
   const [activeNav,setActiveNav] = useState('#')
    
   useEffect(() => {
-    const section = document.querySelectorAll('section')
-    const navLinks = document.querySelectorAll('nav a');
-
+    let section = document.querySelectorAll('section')
+    let navLinks = document.querySelectorAll('nav a');
+    section = ['',...section]
+    navLinks = ['',...navLinks]
     window.addEventListener('scroll',(e) => {
       
       section.forEach(sec => {
-         let top = window.scrollY;
-         let offset = sec.offsetTop - 150;
-         let height = sec.offsetHeight;
-         let id =  sec.getAttribute('id');
-         
-         
-         if(top >= offset && top < offset + height){
-          navLinks.forEach(link => {
-                setActiveNav(`#${id}`);        
-          })
+         if(sec){
+              let top = window.scrollY;
+            let offset = sec.offsetTop - 150;
+            let height = sec.offsetHeight;
+            let id =  sec.getAttribute('id');
+            
+            
+            if(top >= offset && top < offset + height){
+              navLinks.forEach(link => {
+                    setActiveNav(`#${id}`);        
+              })
+            }
+         } else{
+          setActiveNav(`#`);        
          }
       })
    })
