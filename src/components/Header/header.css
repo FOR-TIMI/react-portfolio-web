@@ -14,7 +14,7 @@ header{
 .cta{
     margin-top: 2.5rem;
     display: flex;
-    gap: 1rem;
+    gap: 1.2rem;
     justify-content: center;
 }
 
@@ -25,7 +25,7 @@ header{
     align-items: center;
     position: absolute;
     left:0;
-    gap: 0.5rem;
+    gap: 0.8rem;
     bottom: 3rem;
 }
 
@@ -42,17 +42,10 @@ header{
 .logo {
     height: 30rem;
     left: calc(50% - 15rem);
-    margin-top: 4rem;
+    margin-top: 6rem;
     position: absolute;
     width: 30rem;
 }
-
-/* .me img{
-    margin-top: 4rem;
-    width: 22rem;
-    height: 30rem;
-} */
-
 
 
 /* Scroll down */
@@ -68,26 +61,19 @@ header{
  /* Media Queries (Tablets ) */
 
  @media  screen and (max-width: 1024px) {
-   header{
-    height: 80vh;
-   }
+
+    header{
+        height: 68vh;
+    }
+
+
 }
  /* Media Queries (phones) */
 
  @media  screen and (max-width: 600px) {
+  
     header{
         height: 100vh;
-    }
-    
-    
-    .logo{
-        margin-top: 0;
-
-    }
-
-    .logo-item{
-         height: 15rem;
-         width: 15rem;
     }
 
     .header__socials,
@@ -96,12 +82,4 @@ header{
     }
 }
 
-@media  screen and (max-width: 400px) {
-
-    .logo{
-        left: calc(50% - 11rem);
-        width: 23rem;
-    }
-
-}
 

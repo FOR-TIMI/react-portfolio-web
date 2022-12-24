@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav'
 import About from './components/About/About';
@@ -11,13 +11,38 @@ import Footer from './components/Footer/Footer';
 
 
 const App = () => {
+
+  const [activeNav,setActiveNav] = useState('#')
+   
+  useEffect(() => {
+    const section = document.querySelectorAll('section')
+    const navLinks = document.querySelectorAll('nav a');
+
+    window.addEventListener('scroll',(e) => {
+      
+      section.forEach(sec => {
+         let top = window.scrollY;
+         let offset = sec.offsetTop - 150;
+         let height = sec.offsetHeight;
+         let id =  sec.getAttribute('id');
+         
+         
+         if(top >= offset && top < offset + height){
+          navLinks.forEach(link => {
+                setActiveNav(`#${id}`);        
+          })
+         }
+      })
+   })
+  },[])
+
   return (
     <>
       {/* Header section  */}
       <Header/>
 
       {/* Nav section  */}
-      <Nav/>
+      <Nav activeNav={activeNav} setActiveNav={setActiveNav}/>
 
       {/* About Section */}
       <About/>
