@@ -5,6 +5,9 @@ import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsInstagram, BsLinkedin} from 'react-icons/bs'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Contact = () => {
 
   const form = useRef();
@@ -14,10 +17,12 @@ const Contact = () => {
 
     emailjs.sendForm('react-portfolio', 'template_4gd7rzp', form.current, 'dASa0UBkTt7BX_s5A')
       .then((result) => {
-          console.log(result.text);
+          toast.success("Message sent to Erifeoluwa");
       }, (error) => {
-          console.log(error.text);
-      });
+          toast.error("Oops something went wrong");
+      })
+
+    e.target.reset();
   };
 
 
@@ -25,6 +30,7 @@ const Contact = () => {
     <section id='contact'>
       <h5>Reach out to me</h5>
       <h2>Contact Me</h2>
+      <ToastContainer/>
 
       <div className="container contact__container">
         <div className="contact__options">
@@ -62,6 +68,7 @@ const Contact = () => {
            <textarea name="message" placeholder='Message' rows="7" required></textarea>
            <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
+        
       </div>
     </section >
   )
