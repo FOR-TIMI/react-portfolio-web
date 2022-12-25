@@ -42,7 +42,7 @@ const About = () => {
 
            <p>
               Hello, There. I'm Femi-Ladiran Erifeoluwa but everyone calls me Timi. <br />
-              I am a Web Developer that specializes in building creative and intuitive full stack web applications.
+              I am a Full-Stack software Developer that specializes in building creative and intuitive full stack web applications.
               <br />
             A soccer, piano, and outdoor activity enthusiast. interested in building full stack applications and working on ambitious projects and positive people. Let's build something useful together
            </p>
