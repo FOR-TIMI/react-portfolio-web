@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsInstagram, BsLinkedin} from 'react-icons/bs'
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('react-portfolio', 'template_4gd7rzp', form.current, 'dASa0UBkTt7BX_s5A')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
   return (
     <section id='contact'>
       <h5>Reach out to me</h5>
@@ -39,7 +56,7 @@ const Contact = () => {
         </div>
         
         {/* END OF CONTACT OPTIONS  */}
-        <form action="" >
+        <form ref={form} onSubmit={sendEmail} >
            <input type="text" name='name' placeholder='Full Name' required/>
            <input type="email" name='email' placeholder='Email' required/>
            <textarea name="message" placeholder='Message' rows="7" required></textarea>
