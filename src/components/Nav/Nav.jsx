@@ -4,6 +4,7 @@ import { AiOutlineHome, AiOutlineUser} from 'react-icons/ai'
 import { BiBook, BiMessageDetail} from 'react-icons/bi'
 import { RiServiceLine } from 'react-icons/ri'
 import {FaLaptopCode} from 'react-icons/fa';
+import {TbStars} from 'react-icons/tb'
 
 const Nav = ({activeNav, setActiveNav}) => {
 
@@ -34,6 +35,10 @@ const Nav = ({activeNav, setActiveNav}) => {
         className={activeNav === '#portfolio' ? 'active' : ''}
         onClick={handleClick}
         ><FaLaptopCode/></a>
+      <a href="#review"  
+        className={activeNav === '#review' ? 'active' : ''}
+        onClick={handleClick}
+        ><TbStars/></a>
       <a href="#contact"  
         className={activeNav === '#contact' ? 'active' : ''}
         onClick={handleClick}

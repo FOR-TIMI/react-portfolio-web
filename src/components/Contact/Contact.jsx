@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsInstagram, BsLinkedin} from 'react-icons/bs'
+import { FaTelegramPlane } from 'react-icons/fa';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -66,7 +67,7 @@ const Contact = () => {
            <input type="text" name='name' placeholder='Full Name' required/>
            <input type="email" name='email' placeholder='Email' required/>
            <textarea name="message" placeholder='Message' rows="7" required></textarea>
-           <button type='submit' className='btn btn-primary'>Send Message</button>
+           <button type='submit' className='btn btn-primary form__button'>Send Message <FaTelegramPlane className='send__message-icon'/></button>
         </form>
         
       </div>

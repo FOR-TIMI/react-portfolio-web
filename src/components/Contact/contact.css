@@ -54,6 +54,17 @@ input, textarea{
     color: var(--color-white);
 }
 
+.form__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send__message-icon{
+    font-size: 1.2rem;
+    margin-left: 0.2rem ;
+}
+
 
  /* Media Queries (Tablets ) */
 

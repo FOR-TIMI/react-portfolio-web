@@ -16,28 +16,26 @@ const App = () => {
    
   useEffect(() => {
     let section = document.querySelectorAll('section')
-    let navLinks = document.querySelectorAll('nav a');
-    section = ['',...section]
-    navLinks = ['',...navLinks]
+ 
+
     window.addEventListener('scroll',(e) => {
+      if(window.scrollY < 50){
+        setActiveNav(`#`);        
+      }
       
       section.forEach(sec => {
-         if(sec){
-              let top = window.scrollY;
-              let offset = sec.offsetTop - 150;
-              let height = sec.offsetHeight;
-              let id =  sec.getAttribute('id');
-            
-            
-            if(top >= offset && top < offset + height){
-              navLinks.forEach(link => {
-                    setActiveNav(`#${id}`);        
-              })
-            }
-         } else{
-          setActiveNav(`#`);        
-         }
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id =  sec.getAttribute('id');
+              
+        if(top >= offset && top < offset + height){
+              setActiveNav(`#${id}`);        
+        }    
       })
+
+
+     
    })
   },[])
 

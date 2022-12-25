@@ -34,7 +34,7 @@ const Review = () => {
 
 
   return (
-    <section id='reviews'>
+    <section id='review'>
         <h5>Feedback from colleagues and clients</h5>
         <h2>Reviews</h2>
 

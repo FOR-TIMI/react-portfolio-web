@@ -63,9 +63,10 @@ header{
  @media  screen and (max-width: 1024px) {
 
     header{
-        height: 68vh;
+        height: 70vh;
     }
 
+   
 
 }
  /* Media Queries (phones) */
@@ -75,6 +76,15 @@ header{
     header{
         height: 100vh;
     }
+
+    .logo {
+        height: 30rem;
+        left: calc(50% - 15rem);
+        margin-top: 6rem;
+        position: absolute;
+        width: 30rem;
+    }
+    
 
     .header__socials,
     .scroll__down{
