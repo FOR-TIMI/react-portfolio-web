@@ -40,7 +40,7 @@ const Contact = () => {
             <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>femiladiranerife24@gmail.com</h5>
-            <a href="mailto:femiladiranerife24@gmail.com" target='_blank' re="norefferer">Email me</a>
+            <a href="mailto:femiladiranerife24@gmail.com" target='_blank'  rel="noreferrer">Email me</a>
           </article>
 
           {/* Linkedin  */}
@@ -48,7 +48,7 @@ const Contact = () => {
             <BsLinkedin className='contact__option-icon'/>
             <h4>Linkedin</h4>
             <h5>Erifeoluwa Femi-Ladiran</h5>
-            <a href="https://www.linkedin.com/in/erifeoluwa-femi-ladiran/" target='_blank' rel="norefferer">Let's connect</a>
+            <a href="https://www.linkedin.com/in/erifeoluwa-femi-ladiran/" target='_blank'  rel="noreferrer">Let's connect</a>
           </article>
 
           {/* Instagram  */}
@@ -56,7 +56,7 @@ const Contact = () => {
             <BsInstagram className='contact__option-icon'/>
             <h4>Instagram</h4>
             <h5>for_timi</h5>
-            <a href="https://ig.me/m/for_timi" target='_blank' rel="norefferer">Send a DM</a>
+            <a href="https://ig.me/m/for_timi" target='_blank'  rel="noreferrer">Send a DM</a>
           </article>
 
           
