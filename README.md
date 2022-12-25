@@ -17,7 +17,7 @@ Deployed portfolio of work samples, about me, contact built with React
 To set up and utilise this project. Take the following steps.
 
 - Step 1: Clone this repository
-- ![image](https://user-images.githubusercontent.com/104241247/202819291-44edf534-7d4f-462a-a1d5-a20f00a0ecd6.png)
+- ![image](https://user-images.githubusercontent.com/104241247/209482930-7be4f3e2-c9eb-41e3-a6de-651cdf77d8a2.png)
 - Step 2: Install dependencies by running the ``` npm install ``` command in the command line
 - Step 3: Open your code editor by running the command ``` code . ```
 - step 4 : run ``` npm start ``` in the terminal.
