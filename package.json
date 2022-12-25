@@ -11,6 +11,7 @@
     "react-icons": "^4.7.1",
     "react-scripts": "5.0.1",
     "react-tag-sphere": "^1.0.3",
+    "swiper": "^8.4.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

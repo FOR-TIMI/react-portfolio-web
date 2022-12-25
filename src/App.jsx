@@ -61,7 +61,7 @@ const App = () => {
       {/* Portfolio section  */}
       <Portfolio/>
 
-      {/* Review section  */}
+      {/* References section  */}
       <Review/>
 
       {/* Contact section  */}
