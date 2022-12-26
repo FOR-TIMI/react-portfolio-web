@@ -9,13 +9,19 @@ import Review from './components/Review/Review';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import AOS from 'aos';
+import Loader from './components/Loader/Loader';
 
 
 const App = () => {
 
+  const [isLoading, setIsLoading] = useState(true);
   const [activeNav,setActiveNav] = useState('#')
+
    
   useEffect(() => {
+
+    //Stop the loader afer 2 secs
+    setTimeout(()=> setIsLoading(false),2000)
     
     //Initialize Animate on scroll
     AOS.init({ duration: 800})
@@ -46,6 +52,7 @@ const App = () => {
   },[])
 
   return (
+   isLoading ? <Loader/> : (
     <>
       {/* Header section  */}
       <Header/>
@@ -71,10 +78,11 @@ const App = () => {
       {/* Contact section  */}
       <Contact/>
 
-       {/* Footer Section  */}
+      {/* Footer Section  */}
       <Footer/>
 
     </>
+   )
   )
 }
 
