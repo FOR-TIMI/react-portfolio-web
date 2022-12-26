@@ -16,13 +16,13 @@ import {
   faReact
 } from '@fortawesome/free-brands-svg-icons';
 
-import 'aos/dist/aos.css'
+
 
 const About = () => {
   return (
     <section id='about'>
-      <h5 data-aos="slide-down" data-aos-anchor="#about"  data-aos-duration="750">Unlock the mysteries of me</h5>
-      <h2 data-aos="slide-down" data-aos-anchor="#about"  data-aos-duration="600">About me</h2>
+      <h5 data-aos="fade-up" data-aos-anchor="#about"  data-aos-duration='900'>Unlock the mysteries of me</h5>
+      <h2 data-aos="fade-up" data-aos-anchor="#about"  data-aos-duration='700'>About me</h2>
 
       <div className="container about__container">
       <div className="stage-cube-cont" data-aos="fade-right" data-aos-anchor=".about__container"  data-aos-duration="500">

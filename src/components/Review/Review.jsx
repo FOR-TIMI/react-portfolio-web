@@ -35,8 +35,8 @@ const Review = () => {
 
   return (
     <section id='review'>
-        <h5>Feedback from colleagues and clients</h5>
-        <h2>Reviews</h2>
+        <h5  data-aos="fade-up" data-aos-anchor="#review"  data-aos-duration='700'>Feedback from colleagues and clients</h5>
+        <h2 data-aos="fade-up" data-aos-anchor="#review"  data-aos-duration='900'>Reviews</h2>
 
         <Swiper 
               // install Swiper modules
@@ -44,7 +44,7 @@ const Review = () => {
         spaceBetween={40}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        className="container reviews__container">
+        className="container reviews__container" data-aos="fade-up" data-aos-anchor="#review"  data-aos-duration='1800'>
           {
             reviewData.map(({avatar, name,review }, index) => (
               <SwiperSlide className="review" key={index}>

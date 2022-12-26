@@ -8,46 +8,46 @@ const Portfolio = () => {
       name : "Starship",
       deployedLink: "https://still-cliffs-68409.herokuapp.com/dashboard/app",
       image: require('../../assets/starship.png'),
-      fadeDuration:'800'
+      fadeDuration:'1000'
     },
     {
       name : "weBlog",
       deployedLink: "https://bloggersintech.herokuapp.com/login",
       image: require('../../assets/weBlog.png'),
-      fadeDuration:'900'
+      fadeDuration:'1100'
     },
     {
       name:"BERG-Maps",
       deployedLink: "https://for-timi.github.io/BERG-Maps/",
       image: require('../../assets/berg.png'),
-      fadeDuration:'1000'
+      fadeDuration:'1200'
     },
     {
       name: "AutoAuto",
       deployedLink: "https://stormy-wildwood-35895.herokuapp.com/",
       image: require('../../assets/autoAuto.png'),
-      fadeDuration:'1100'
+      fadeDuration:'1300'
     },
     
     {
       name:"AwesomeEditorPWA",
       deployedLink: "https://salty-everglades-36024.herokuapp.com/",
       image: require('../../assets/text-editor.png'),
-      fadeDuration:'1200'
+      fadeDuration:'1400'
     },
     {
       name:"react-portfolio",
       deployedLink: "https://for-timi.github.io/react-portfolio/",
       image: require('../../assets/portfolio.png'),
-      fadeDuration:'1300'
+      fadeDuration:'1500'
     }
   ]
 
 
   return (
     <section id='portfolio'>
-        <h5 data-aos="fade-down" data-aos-anchor=".portfolio__container"  data-aos-duration='700'>My most recent projects</h5>
-        <h2 data-aos="fade-down" data-aos-anchor=".portfolio__container"  data-aos-duration='900'>My Portfolio</h2>
+        <h5 data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration='700'>My most recent projects</h5>
+        <h2 data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration='900'>My Portfolio</h2>
 
         <div className="container portfolio__container">
 

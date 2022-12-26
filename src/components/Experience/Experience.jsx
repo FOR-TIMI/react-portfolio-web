@@ -2,13 +2,12 @@ import React from 'react'
 import './experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
 
-import 'aos/dist/aos.css'
 
 const Experience = () => {
   return (
     <section id='experience'>
-      <h5>What are my skills?</h5>
-      <h2>My Experience</h2>
+      <h5 data-aos="fade-up" data-aos-anchor="#experience"  data-aos-duration='900'>What are my skills?</h5>
+      <h2 data-aos="fade-up" data-aos-anchor="#experience"  data-aos-duration='700'>My Experience</h2>
 
 
       <div className="container experience__container">

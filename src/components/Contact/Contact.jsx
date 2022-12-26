@@ -29,14 +29,14 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-      <h5>Reach out to me</h5>
-      <h2>Contact Me</h2>
+      <h5 data-aos="fade-up" data-aos-anchor="#contact"  data-aos-duration='700'>Reach out to me</h5>
+      <h2 data-aos="fade-up" data-aos-anchor="#contact"  data-aos-duration='900'>Contact Me</h2>
       <ToastContainer/>
 
       <div className="container contact__container">
         <div className="contact__options">
           {/* Email  */}
-          <article className="contact__option">
+          <article className="contact__option" data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='1600'>
             <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>femiladiranerife24@gmail.com</h5>
@@ -44,7 +44,7 @@ const Contact = () => {
           </article>
 
           {/* Linkedin  */}
-          <article className="contact__option">
+          <article className="contact__option" data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='1300'>
             <BsLinkedin className='contact__option-icon'/>
             <h4>Linkedin</h4>
             <h5>Erifeoluwa Femi-Ladiran</h5>
@@ -52,7 +52,7 @@ const Contact = () => {
           </article>
 
           {/* Instagram  */}
-          <article className="contact__option">
+          <article className="contact__option" data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='1000'>
             <BsInstagram className='contact__option-icon'/>
             <h4>Instagram</h4>
             <h5>for_timi</h5>
@@ -64,10 +64,10 @@ const Contact = () => {
         
         {/* END OF CONTACT OPTIONS  */}
         <form ref={form} onSubmit={sendEmail} >
-           <input type="text" name='name' placeholder='Full Name' required/>
-           <input type="email" name='email' placeholder='Email' required/>
-           <textarea name="message" placeholder='Message' rows="7" required></textarea>
-           <button type='submit' className='btn btn-primary form__button'>Send Message <FaTelegramPlane className='send__message-icon'/></button>
+           <input type="text" name='name' placeholder='Full Name' data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='800' required/>
+           <input type="email" name='email' placeholder='Email' data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='950' required/>
+           <textarea name="message" placeholder='Message' rows="7" data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='1200' required></textarea>
+           <button type='submit' className='btn btn-primary form__button' data-aos="fade-up" data-aos-anchor=".contact__container"  data-aos-duration='1400'>Send Message <FaTelegramPlane className='send__message-icon'/></button>
         </form>
         
       </div>

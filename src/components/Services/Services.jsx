@@ -2,13 +2,12 @@ import React from 'react'
 import './services.css'
 import { BiCheck } from 'react-icons/bi'
 
-import 'aos/dist/aos.css'
 
 const Services = () => {
   return (
     <section id='services'>
-      <h5>The things i can do for you</h5>
-      <h2>My Services</h2>
+      <h5 data-aos="fade-up" data-aos-anchor="#services"  data-aos-duration='700'>The things i can do for you</h5>
+      <h2 data-aos="fade-up" data-aos-anchor="#services"  data-aos-duration='900'>My Services</h2>
       
       <div className="container services__container">
         <article className="service" data-aos="fade-right" data-aos-anchor=".services__container"  data-aos-duration="900">
