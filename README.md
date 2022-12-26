@@ -10,7 +10,7 @@ Deployed portfolio of work samples, about me, contact built with React
 - [Contributions](#contribution)
 - [Licenses](#licenses)
 - [Questions](#questions)
-- [website link](https://for-timi.github.io/react-portfolio/) // Checkout the deployed website 
+- [website link](https://for-timi.github.io/react-portfolio-web/) // Checkout the deployed website 
     
         
 ## Installation
@@ -46,7 +46,7 @@ A responsive, single page application for developers to showcase their skills
 
 
 ## website
-https://for-timi.github.io/react-portfolio/
+https://for-timi.github.io/react-portfolio-web/
 
 ## Contribution
 Made with ❤️ by Timi
