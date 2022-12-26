@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Review from './components/Review/Review';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import AOS from 'aos';
 
 
 const App = () => {
@@ -15,6 +16,11 @@ const App = () => {
   const [activeNav,setActiveNav] = useState('#')
    
   useEffect(() => {
+    
+    //Initialize Animate on scroll
+    AOS.init({ duration: 800, once: true})
+
+
     let section = document.querySelectorAll('section')
  
 
