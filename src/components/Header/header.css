@@ -1,55 +1,52 @@
-header{
+header {
     height: 100vh;
     padding-top: 7rem;
     overflow: hidden;
 }
 
-.header__container{
+.header__container {
     text-align: center;
     height: 100%;
     position: relative;
 }
 
-/* Call To action buttons  */
-.cta{
+/* ========================== CTA ========================== */
+.cta {
     margin-top: 2.5rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
 }
 
-/* Socials icons */
-.header__socials{
+/* ========================== HEADER SOCIALS ========================== */
+.header__socials {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    left:0;
     gap: 0.8rem;
+    position: absolute;
+    left: 0;
     bottom: 3rem;
 }
 
-.header__socials::after{
-    content: "";
+.header__socials::after {
+    content: '';
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
 }
 
-
-
-/* header Image || me  */
+/* ========================== ME ========================== */
 .logo {
-    height: 30rem;
-    left: calc(50% - 15rem);
-    margin-top: 6rem;
-    position: absolute;
     width: 30rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 15rem);
+    margin-top: 4rem;
+   
 }
 
-
-/* Scroll down */
-.scroll__down{
+.scroll__down {
     position: absolute;
     right: -2.3rem;
     bottom: 5rem;
@@ -58,38 +55,48 @@ header{
     font-size: 0.9rem;
 }
 
- /* Media Queries (Tablets ) */
-
- @media  screen and (max-width: 1024px) {
-
-    header{
-        height: 70vh;
+/* ========================= MEDIA QUERIES (MEDIUM DEVICES) ======================== */
+/* ================================= Tablets ================================= */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 95vh;
     }
-
-   
-
 }
- /* Media Queries (phones) */
+/* ========================= MEDIA QUERIES (SMALL DEVICES) ======================== */
 
- @media  screen and (max-width: 600px) {
-  
-    header{
-        height: 100vh;
-    }
+@media screen and (max-width: 600px) {
 
-    .logo {
-        height: 30rem;
-        left: calc(50% - 15rem);
-        margin-top: 6rem;
-        position: absolute;
-        width: 30rem;
-    }
-    
-
-    .header__socials,
-    .scroll__down{
+    .header__socials, .scroll__down {
         display: none;
     }
+
+    header  {
+        height: 115vh;
+    }
+}
+
+/* ========================= MEDIA QUERIES (SMALL DEVICES) ======================== */
+@media screen and (max-width: 385px) {
+    header {
+        height: 130vh;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    header {
+        height: 105vh;
+    }
+
+    header img {
+        width: 50vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
+@media screen and (max-width: 300px) {
+    header {
+        height: 125vh;
+    }
+}
