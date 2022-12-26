@@ -2,6 +2,8 @@ import React from 'react'
 import './services.css'
 import { BiCheck } from 'react-icons/bi'
 
+import 'aos/dist/aos.css'
+
 const Services = () => {
   return (
     <section id='services'>
@@ -9,7 +11,7 @@ const Services = () => {
       <h2>My Services</h2>
       
       <div className="container services__container">
-        <article className="service">
+        <article className="service" data-aos="fade-right" data-aos-anchor=".services__container"  data-aos-duration="900">
 
           <div className="service__head">
             <h3>UI/UX Design</h3>
@@ -45,7 +47,7 @@ const Services = () => {
 
         {/* END OF UI/UX */}
 
-        <article className="service">
+        <article className="service" data-aos="fade-up" data-aos-anchor=".services__container"  data-aos-duration="1200">
 
           <div className="service__head">
             <h3>Web development</h3>
@@ -86,7 +88,7 @@ const Services = () => {
         {/* End of web development  */}
 
 
-        <article className="service">
+        <article className="service" data-aos="fade-left" data-aos-anchor=".services__container"  data-aos-duration="900">
 
           <div className="service__head">
             <h3>Digital Marketing</h3>

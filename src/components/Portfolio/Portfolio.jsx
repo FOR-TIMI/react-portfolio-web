@@ -7,47 +7,53 @@ const Portfolio = () => {
     { 
       name : "Starship",
       deployedLink: "https://still-cliffs-68409.herokuapp.com/dashboard/app",
-      image: require('../../assets/starship.png')
+      image: require('../../assets/starship.png'),
+      fadeDuration:'800'
     },
     {
       name : "weBlog",
       deployedLink: "https://bloggersintech.herokuapp.com/login",
-      image: require('../../assets/weBlog.png')
+      image: require('../../assets/weBlog.png'),
+      fadeDuration:'900'
     },
     {
       name:"BERG-Maps",
       deployedLink: "https://for-timi.github.io/BERG-Maps/",
-      image: require('../../assets/berg.png')
+      image: require('../../assets/berg.png'),
+      fadeDuration:'1000'
     },
     {
       name: "AutoAuto",
       deployedLink: "https://stormy-wildwood-35895.herokuapp.com/",
-      image: require('../../assets/autoAuto.png')
+      image: require('../../assets/autoAuto.png'),
+      fadeDuration:'1100'
     },
     
     {
       name:"AwesomeEditorPWA",
       deployedLink: "https://salty-everglades-36024.herokuapp.com/",
-      image: require('../../assets/text-editor.png')
+      image: require('../../assets/text-editor.png'),
+      fadeDuration:'1200'
     },
     {
       name:"react-portfolio",
       deployedLink: "https://for-timi.github.io/react-portfolio/",
-      image: require('../../assets/portfolio.png')
+      image: require('../../assets/portfolio.png'),
+      fadeDuration:'1300'
     }
   ]
 
 
   return (
     <section id='portfolio'>
-        <h5>My most recent projects</h5>
-        <h2>My Portfolio</h2>
+        <h5 data-aos="fade-down" data-aos-anchor=".portfolio__container"  data-aos-duration='700'>My most recent projects</h5>
+        <h2 data-aos="fade-down" data-aos-anchor=".portfolio__container"  data-aos-duration='900'>My Portfolio</h2>
 
         <div className="container portfolio__container">
 
          { 
-          projects.map( ({name,image,deployedLink}) => (
-          <article className='portfolio__item' key={name}>
+          projects.map( ({name,image,deployedLink, fadeDuration}) => (
+          <article className='portfolio__item' key={name} data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration={fadeDuration}>
               <div className="portfolio__item-image">
                   <img src={image} alt={`${name} app Screenshot`} />
               </div>
