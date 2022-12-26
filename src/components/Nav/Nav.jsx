@@ -6,6 +6,7 @@ import { RiServiceLine } from 'react-icons/ri'
 import {FaLaptopCode} from 'react-icons/fa';
 import {TbStars} from 'react-icons/tb'
 
+
 const Nav = ({activeNav, setActiveNav}) => {
 
   const handleClick = (event) => {                     

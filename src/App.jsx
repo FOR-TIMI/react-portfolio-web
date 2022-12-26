@@ -18,7 +18,7 @@ const App = () => {
   useEffect(() => {
     
     //Initialize Animate on scroll
-    AOS.init({ duration: 800, once: true})
+    AOS.init({ duration: 800})
 
 
     let section = document.querySelectorAll('section')

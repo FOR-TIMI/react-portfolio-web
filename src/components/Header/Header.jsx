@@ -12,18 +12,19 @@ const Header = () => {
   return (
     <header>
        <article className="container header__container">
-         <h5 data-aos="fade-down" data-aos-duration="650" >Hello I'm</h5>
-         <h1 data-aos="fade-down" data-aos-duration="550" >Erifeoluwa Femi-Ladiran</h1>
-         <h5 data-aos="fade-down" data-aos-once data-aos-duration="400" className="text-light">Full-stack Software Developer</h5>
+         <h5 data-aos="slide-down" data-aos-duration="650" >Hello I'm</h5>
+         <h1 data-aos="slide-down" data-aos-duration="550" >Erifeoluwa Femi-Ladiran</h1>
+         <h5 data-aos="slide-down" data-aos-duration="400" className="text-light">Full-stack Software Developer</h5>
          <CTA/>
 
-         <HeaderSocial data-aos="fade-in"/>
+         <HeaderSocial />
 
 
          <div className="logo">
-           <img className='logo-image' data-aos="fade-up" src={Logo} alt="me" />
+           <img className='logo-image' data-aos="slide-up"  data-aos-duration="500" src={Logo} alt="me" />
          </div>
-
+        
+        
          <a href="#contact"  className="scroll__down">Scroll Down {'>>'} </a>
        </article>
 
