@@ -1,7 +1,12 @@
-#Portfolio
+# A Developer's Portfolio(Built with react)
 
 ## Description
 Deployed portfolio of work samples, about me, contact built with React
+
+## Support the project ⭐
+If you feel awesome and want to support us in a small way, please consider checking out our other projects, starring and sharing this repo! This helps us getting known and grow the community. 🙏
+ 
+![image](https://raw.githubusercontent.com/lusaxweb/vuesax/master/public/github-vuesax-star.gif)
 
     
 ## Table of Content
@@ -52,4 +57,4 @@ https://for-timi.github.io/react-portfolio-web/
 Made with ❤️ by Timi
 
 ## questions
-For additional questions contact me via email on [femiladiranerife24@gmail.com](mailto:femiladiranerife24@gmail.com) or [view some other projects](https://github.com/FOR-TIMI/).
+Feel free to reach out via email on [femiladiranerife24@gmail.com](mailto:femiladiranerife24@gmail.com) or [view some other projects](https://github.com/FOR-TIMI/).
