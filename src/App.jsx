@@ -15,6 +15,7 @@ import Loader from './components/Loader/Loader';
 const App = () => {
 
   const [isLoading, setIsLoading] = useState(true);
+  // const isLoading = false
   const [activeNav,setActiveNav] = useState('#')
 
    
@@ -24,7 +25,15 @@ const App = () => {
     setTimeout(()=> setIsLoading(false),2000)
     
     //Initialize Animate on scroll
-    AOS.init({ duration: 800})
+    AOS.init({
+      duration: 800, 
+      disable:function () {
+        var maxWidth = 1024;
+        return window.innerWidth < maxWidth;
+      }
+  })
+
+    AOS.refresh();
 
 
     let section = document.querySelectorAll('section')
@@ -49,7 +58,7 @@ const App = () => {
 
      
    })
-  },[])
+  },[activeNav, isLoading])
 
   return (
    isLoading ? <Loader/> : (
