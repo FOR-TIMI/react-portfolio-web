@@ -33,7 +33,6 @@ const App = () => {
       }
   })
 
-    AOS.refresh();
 
 
     let section = document.querySelectorAll('section')
