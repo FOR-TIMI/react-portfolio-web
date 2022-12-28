@@ -1,4 +1,4 @@
-# A Developer's Portfolio(Built with react)
+# Software Developer's Portfolio(Built with react)
 
 ## Description
 Deployed portfolio of work samples, about me, contact built with React
