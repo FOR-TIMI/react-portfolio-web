@@ -1,4 +1,4 @@
-# Software Developer's Portfolio(Built with react)
+# A Developer's Portfolio(Built with react)
 
 ## Description
 Deployed portfolio of work samples, about me, contact built with React
@@ -12,6 +12,7 @@ If you feel awesome and want to support us in a small way, please consider check
 ## Table of Content
 - [Installation](#installation)
 - [Usage](#usage)
+- [Customize Portfolio]()
 - [Contributions](#contribution)
 - [Licenses](#licenses)
 - [Questions](#questions)
@@ -30,6 +31,50 @@ To set up and utilise this project. Take the following steps.
     
 ## Usage
 A responsive, single page application for developers to showcase their skills
+
+## Customize Portfolio
+- Colors:
+  To customize the colors to the colors you want, CSS variables are used in the [index.css file](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/index.css). There you can update the variables to set your custom colors
+   - Background Color: To set a new background color, update the `--color-bg` CSS variable and set your custom color in rbg, hex,hsl.
+   `:root{
+    --color-bg: YOUR CUSTOM COLOR CODE; //This line
+    }
+   `
+   - Background Color Variant: To set a update background color variant , update the `--color-bg-variant` CSS variable and set your custom color in rbg, hex,hsl
+     ```
+     :root{
+     --color-bg-variant: YOUR CUSTOM COLOR CODE; //This line
+     }
+      ```
+   - Primary Color: To update the primary color, update the  `--color-primary`CSS variable and set your custom color in rbg, hex,hsl.
+     ```
+     :root{
+     --color-primary: YOUR CUSTOM COLOR CODE; //This line
+     }
+      ```
+   - Primary Color variant: To update the primary color, update the  `--color-primary`CSS variable and set your custom color in rbg, hex,hsl.
+     ```
+     :root{
+     --color-primary: YOUR CUSTOM COLOR CODE; //This line
+     }
+      ```
+      
+- Resume:
+   To add your custom images to the project, do the following
+    - Navigate to the [assets folder](https://github.com/FOR-TIMI/react-portfolio-web/tree/main/src/assets).
+    - rename, save your resume as `CV.pdf` and move it into the assets folder.
+    
+ 
+    Note: If your resume is not in pdf format and you don't want to update it to PDF format, navigate to the [Call to action](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/components/Header/CTA.jsx) component and update the import statement to use your resume file 
+    ```
+    import CV from '../../assets/YOUR RESUME NAME' //update this line
+     ```
+     
+     and you should be good to go on your resume
+     
+
+
+    
 
 
 ## Screenshot
