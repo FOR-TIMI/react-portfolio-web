@@ -1,6 +1,5 @@
 import React from 'react'
 import CV from '../../assets/CV.pdf'
-import 'aos/dist/aos.css'
 
 
 const CTA = () => {
