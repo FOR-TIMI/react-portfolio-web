@@ -12,7 +12,7 @@ If you feel awesome and want to support us in a small way, please consider check
 ## Table of Content
 - [Installation](#installation)
 - [Usage](#usage)
-- [Customize Portfolio]()
+- [Customize Portfolio](#customize-portfolio)
 - [Contributions](#contribution)
 - [Licenses](#licenses)
 - [Questions](#questions)
@@ -36,10 +36,10 @@ A responsive, single page application for developers to showcase their skills
 - Colors:
   To customize the colors to the colors you want, CSS variables are used in the [index.css file](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/index.css). There you can update the variables to set your custom colors
    - Background Color: To set a new background color, update the `--color-bg` CSS variable and set your custom color in rbg, hex,hsl.
-   `:root{
-    --color-bg: YOUR CUSTOM COLOR CODE; //This line
-    }
-   `
+     ```:root{
+     --color-bg: YOUR CUSTOM COLOR CODE; //This line
+     }
+      ```
    - Background Color Variant: To set a update background color variant , update the `--color-bg-variant` CSS variable and set your custom color in rbg, hex,hsl
      ```
      :root{
@@ -70,8 +70,30 @@ A responsive, single page application for developers to showcase their skills
     import CV from '../../assets/YOUR RESUME NAME' //update this line
      ```
      
-     and you should be good to go on your resume
+     and you should be good to go on your resume.
      
+- Social links: 
+     In terms of Social media links, I used the `Linkedin`, `Github` and `Codewars` links in the [Header section](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/components/Header/HeaderSocials.jsx).
+     If you want to use your own `Linkedin`, `Github` and `Codewars` links, 
+     1. navigate to the [Header socials component](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/components/Header/HeaderSocials.jsx). 
+     2. update the href attributes for the three links <br><br>
+      
+     
+       <a data-aos="fade-down" data-aos-duration="1500"  href="YOUR LINKEDIN URL" target="_blank" rel="noreferrer"><BsLinkedin/></a>
+       <a data-aos="fade-down" data-aos-duration="1200" href="YOUR GITHUB URL" target="_blank" rel="noreferrer"><FaGithub/></a>
+       <a data-aos-duration="900" data-aos="fade-down"  data-aos-anchor=".header__socials"  href="YOUR CODEWARS URL" target="_blank" rel="noreferrer"><SiCodewars/></a> 
+      
+      
+
+    If you want to add some more links or you want to make changes to the current links and Icons
+    1. Find the Icon you want to add from [React Icons website](https://react-icons.github.io/react-icons/search)
+    2. Import the Icon
+    3. add a new href or update and existing one, put the icon you imported in the anchor tag. <br> <br>
+    
+  
+      <a data-aos="fade-down" data-aos-duration="1200" href="YOUR URL" target="_blank" rel="noreferrer"><YourIcon/></a>
+      
+  with that, you can add and remove social media links and icons
 
 
     
