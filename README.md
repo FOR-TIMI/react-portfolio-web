@@ -13,6 +13,13 @@ If you feel awesome and want to support us in a small way, please consider check
 - [Installation](#installation)
 - [Usage](#usage)
 - [Customize Portfolio](#customize-portfolio)
+  - [customize colors](#colors)
+    - [Background Color](#background-color-)
+    - [Background Color Variant](#primary-color-variant-)
+    - [Primary Color](#primary-color)
+    - [ Primary Color variant](#primary-color-variant-)
+  - [Add your Resume](#resume)
+  - [customize Social Media links](#social-links)
 - [Contributions](#contribution)
 - [Licenses](#licenses)
 - [Questions](#questions)
@@ -33,33 +40,37 @@ To set up and utilise this project. Take the following steps.
 A responsive, single page application for developers to showcase their skills
 
 ## Customize Portfolio
-- Colors:
+- ### Colors:
   To customize the colors to the colors you want, CSS variables are used in the [index.css file](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/index.css). There you can update the variables to set your custom colors
-   - Background Color: To set a new background color, update the `--color-bg` CSS variable and set your custom color in rbg, hex,hsl.
+   - ### Background Color: <br>
+      To set a new background color, update the `--color-bg` CSS variable and set your custom color in rbg, hex,hsl.
      ```:root{
      --color-bg: YOUR CUSTOM COLOR CODE; //This line
      }
       ```
-   - Background Color Variant: To set a update background color variant , update the `--color-bg-variant` CSS variable and set your custom color in rbg, hex,hsl
+   - ### Background Color Variant: <br>
+        To set a update background color variant , update the `--color-bg-variant` CSS variable and set your custom color in rbg, hex,hsl
      ```
      :root{
      --color-bg-variant: YOUR CUSTOM COLOR CODE; //This line
      }
       ```
-   - Primary Color: To update the primary color, update the  `--color-primary`CSS variable and set your custom color in rbg, hex,hsl.
+   - ### Primary Color:<br>
+        To update the primary color, update the  `--color-primary`CSS variable and set your custom color in rbg, hex,hsl.
      ```
      :root{
      --color-primary: YOUR CUSTOM COLOR CODE; //This line
      }
       ```
-   - Primary Color variant: To update the primary color, update the  `--color-primary`CSS variable and set your custom color in rbg, hex,hsl.
+   - ### Primary Color variant: <br> 
+      To update the primary color, update the  `--color-primary` CSS variable and set your custom color in rbg, hex,hsl.
      ```
      :root{
      --color-primary: YOUR CUSTOM COLOR CODE; //This line
      }
       ```
       
-- Resume:
+- ### Resume:
    To add your custom images to the project, do the following
     - Navigate to the [assets folder](https://github.com/FOR-TIMI/react-portfolio-web/tree/main/src/assets).
     - rename, save your resume as `CV.pdf` and move it into the assets folder.
@@ -72,7 +83,7 @@ A responsive, single page application for developers to showcase their skills
      
      and you should be good to go on your resume.
      
-- Social links: 
+- ### Social links: 
      In terms of Social media links, I used the `Linkedin`, `Github` and `Codewars` links in the [Header section](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/components/Header/HeaderSocials.jsx).
      If you want to use your own `Linkedin`, `Github` and `Codewars` links, 
      1. navigate to the [Header socials component](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/components/Header/HeaderSocials.jsx). 
