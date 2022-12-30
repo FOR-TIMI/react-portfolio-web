@@ -20,6 +20,10 @@ If you feel awesome and want to support us in a small way, please consider check
     - [ Primary Color variant](#primary-color-variant-)
   - [Add your Resume](#resume)
   - [customize Social Media links](#social-links)
+  - [About Me](#about-me)
+  - [Experience](#experience)
+  - [Services](#services)
+  - [Portoflio](#portfolio)
 - [Contributions](#contribution)
 - [Licenses](#licenses)
 - [Questions](#questions)
@@ -104,7 +108,45 @@ A responsive, single page application for developers to showcase their skills
   
       <a data-aos="fade-down" data-aos-duration="1200" href="YOUR URL" target="_blank" rel="noreferrer"><YourIcon/></a>
       
-  with that, you can add and remove social media links and icons
+  with that, you can add and remove social media links and icons.
+  
+  - ### About me:
+    To customize the about me section, Navigate to the [about component](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/components/About/About.jsx)
+    and then customize the `experience`, `collaborators` and `paragraph` as you see fit.
+    
+ - ### Experience: 
+   To Add your experience and tech stack to the experience section, Navigate to the [Experience Component](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/components/Experience/Experience.jsx) and update jsx how you see fit.
+   
+ - ### Services:
+  To update the services, navigate to the [Services Component](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/components/Services/Services.jsx)
+  and update your services as you see fit.
+  
+ - ### Portfolio:
+  To update the portfolio section to accomodate your own projects. First, navigate to the [Portoflio component](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/components/Portfolio/Portfolio.jsx) and then follow these steps; 
+   1. Import all Images of your projects to the [assets Folder](https://github.com/FOR-TIMI/react-portfolio-web/tree/main/src/assets)
+   2. update the projects array to look like the following;
+   
+     const projects = [ 
+      { 
+        name : {PROJECT NAME} , //Must match the name of the project on github
+        deployedLink: "{LINK}", //Deployed link of your project
+        image: require('../../assets/{THE IMAGE RELATED TO THIS PROJECT}'),
+        fadeDuration:{ANIMATION SPEED} // To set the animation speed.
+      }
+    ]
+     
+      <br>
+      After making these changes, your project should be rendered on the page just as usual.
+      
+    
+  
+ 
+  
+  
+    
+    
+    
+  
 
 
     
