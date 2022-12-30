@@ -135,8 +135,7 @@ A responsive, single page application for developers to showcase their skills
       }
     ]
      
-      <br>
-      After making these changes, your project should be rendered on the page just as usual.
+  After making these changes, your project should be rendered on the page just as usual.
       
     
   
