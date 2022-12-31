@@ -17,13 +17,17 @@ If you feel awesome and want to support us in a small way, please consider check
     - [Background Color](#background-color-)
     - [Background Color Variant](#primary-color-variant-)
     - [Primary Color](#primary-color)
-    - [ Primary Color variant](#primary-color-variant-)
+    - [Primary Color variant](#primary-color-variant-)
   - [Add your Resume](#resume)
   - [customize Social Media links](#social-links)
   - [About Me](#about-me)
   - [Experience](#experience)
   - [Services](#services)
   - [Portoflio](#portfolio)
+  - [Reviews](#reviews)
+  - [Contact](#contact)
+    - [Customize contact links](#customize-contact-links)
+    - [Contact Form](#contact-form)
 - [Contributions](#contribution)
 - [Licenses](#licenses)
 - [Questions](#questions)
@@ -137,7 +141,34 @@ A responsive, single page application for developers to showcase their skills
      
   After making these changes, your project should be rendered on the page just as usual.
       
+ - ### Reviews
+  To update the reviews section, Navigate to the [Reviews Component](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/components/Review/Review.jsx).
+  In the reviews component, update the `reviewsData` array to fit your reviews. To customize the reviewsData array, follows these steps
+   1. upload the images for each reviewer and move them to your [assets folder](https://github.com/FOR-TIMI/react-portfolio-web/tree/main/src/assets).
+   2. Once you've uploaded your images to the assets folder, import those images into the reviewData array;
+      
+    const reviewData = [
+    {
+      avatar: require('../../assets/REVIEWER'S IMAGE'), //Should be the image that was imported in the 1st step
+      name: 'THE NAME OF THE REVIEWER',
+      review: `YOUR REVIEW TEXT`
+    } 
+    ]
     
+    Once you've updated the reviewData array, your reviews should be rendered on the page successfully.
+    
+- ### Contact:
+     - #### Customize contact links:
+       To customize the `Linkedin`, `Instagram` and `Email` links, Navigate to the href attributes of each element.
+       1. email : Update the email link to `mailto:YOUR-EMAIL-ADDRESS` // updates the mailto field in the user's email
+       2. linkedin: Update the linkedin link to `YOUR LINKEDIN URL`
+       3. Instagram: Update the Instagram link to `https://ig.me/m/YOUR-INSTAGRAM-USERNAME` //sets you username open in the user's inbox
+       
+     - #### Contact Form:
+        To update the form so you recieve messages directly into your inbox, create an account on [emailJs](https://www.emailjs.com/) platform and take a quick look at the [documentation](https://www.emailjs.com/docs/examples/reactjs/).
+        create a template and update the fields as instructed in the [emailJs Documentation](https://www.emailjs.com/docs/examples/reactjs/) 
+        
+        With this, you should be setup to recieve emails from the form.
   
  
   
