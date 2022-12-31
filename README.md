@@ -28,6 +28,7 @@ If you feel awesome and want to support us in a small way, please consider check
   - [Contact](#contact)
     - [Customize contact links](#customize-contact-links)
     - [Contact Form](#contact-form)
+- [How to Deploy to Github pages for free](#how-to-deploy-to-github-pages-for-free)
 - [Contributions](#contribution)
 - [Licenses](#licenses)
 - [Questions](#questions)
@@ -171,7 +172,27 @@ A responsive, single page application for developers to showcase their skills
         With this, you should be setup to recieve emails from the form.
   
  
-  
+ ## How to Deploy to Github pages for free
+ 
+ After customizing the website, you can deploy it to github pages for free by following these steps;<br>
+ 
+   - Navigate to the [package.json file](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/package.json)
+   - Update the `homepage` in the package.json file
+    ```
+     {
+     "homepage": "https://YOUR-GITHUB-USERNAME.github.io/NAME-OF-REPOSITORY",
+     }
+    ```
+      
+      Make sure both your github username and the name of the repository on GitHub are spelt correctly.
+    Note: you don't need to update the scripts because the scripts have been updated for you.
+    
+   - open up your terminal and run the command `npm run deploy`. This will take some time so grab your popcorn and wait for it to finish.
+   - finally, you new portfolio website should be deployed to GitHub. your website link should be <br> `https://YOUR-GITHUB-USERNAME.github.io/NAME-OF-REPOSITORY-ON-GITHUB/`
+    
+   Note: if you have any error while deploying your new portfolio website, checkout [github pages documentation](https://docs.github.com/en/pages)
+       
+ 
   
     
     
