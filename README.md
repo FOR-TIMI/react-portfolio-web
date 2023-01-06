@@ -4,7 +4,7 @@
 Deployed portfolio of work samples, about me, contact built with React
 
 ## Support the project ⭐
-If you feel awesome and want to support us in a small way, please consider checking out our other projects, starring and sharing this repo! This helps us getting known and grow the community. 🙏
+If you're feeling great and want to show your support, please consider checking out my other projects, giving this repository a star, and sharing it with others. This helps me to gain visibility and grow our community. Thank you in advance for your support. 🙏
  
 ![image](https://raw.githubusercontent.com/lusaxweb/vuesax/master/public/github-vuesax-star.gif)
 
