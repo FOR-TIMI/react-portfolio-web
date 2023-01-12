@@ -40,7 +40,7 @@ const Modal = ({ closeModal, project }) => {
 
 
           <div className="modal-tools__container">       
-              <h5 className='modal-tools__header'>Tools Used:</h5>
+              <h4 className='modal-tools__header'>Tools Used</h4>
               <ul className="modal-tools">
                     <li className='modal-tool__item'>
                       <BsPatchCheckFill className="modal__tools-icon"/>

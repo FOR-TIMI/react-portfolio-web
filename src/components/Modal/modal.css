@@ -22,8 +22,8 @@
 .modal-content {
     background-color: var(--color-bg);
     padding: 20px;
-    width: 80%;
     border-radius: 2rem;
+    width: 40%;
 }
 
 .modal-close__button{
@@ -35,6 +35,12 @@
     border: none;
     margin-bottom: 10px;
     float: right;
+    cursor: pointer;
+}
+
+.modal-close__button:hover{
+  color: var(--color-primary);
+  transition: var(--transition);
 }
 
 .modal-image{
@@ -61,7 +67,8 @@
 
 .modal-tools__container{
   padding: "1.2rem";
-  margin: "3px 0";
+  margin: 0 auto;
+  width: 70%;
 }
 
 .modal-tool__item{
@@ -76,15 +83,58 @@
 
 .modal-tools{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 1.2rem;
+  margin-bottom: 30px;
 }
 
 .modal-tools__header{
-  margin: 1.2rem 0;
+  margin: 1.2rem;
+  text-align: center;
 }
 
 
 .modal-content p{
   font-size: 0.9rem;
+}
+
+
+
+@media  screen and (max-width: 1300px) {
+
+  .modal-content{
+    width: 65%;
+  }
+
+  .modal-tools__container{
+    width: 80%;
+    margin: 0 auto;
+  }
+ 
+}
+
+
+@media  screen and (max-width: 1025px) {
+  .modal-tools{
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+
+}
+
+/* Media Queries (phones) */
+
+@media  screen and (max-width: 600px) {
+
+  .modal-tools{
+    width: 100%;
+    grid-template-columns: 1fr 1fr ;
+  }
+  .modal-content{
+    width: 95%;
+  }
+
+  .modal-tools__container{
+    width: 85%;
+  }
+
 }
