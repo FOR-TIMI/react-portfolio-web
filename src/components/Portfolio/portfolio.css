@@ -1,3 +1,13 @@
+/* The animation code */
+@keyframes colorChange {
+    0% {
+      color: #000;
+    }
+    100% {
+      color: #ecc92d;
+    }
+  }
+
 .portfolio__container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -9,12 +19,13 @@
     padding: 1.2rem;
     border-radius: 2rem;
     border: 1px solid transparent;
-    transition: var(--transition);
+    transition: all .2s ease-in-out;
 }
 
 .portfolio__item:hover{
     border-color: var(--color-primary-variant);
     background: transparent;
+    transform: scale(1.08);
 }
 
 .portfolio__item-image{
@@ -22,8 +33,19 @@
     overflow: hidden;
 }
 
+.portfolio__item-name:hover{
+     animation: colorChange 0.5s ease-in;
+     color: #ecc92d
+}
+
 .portfolio__item h3{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    height: 2rem;
     margin: 1.2rem 0 2rem;
+    transition: var(--transition);
+    box-sizing: border-box;
+
 }
 
 .portfolio__item-cta{
