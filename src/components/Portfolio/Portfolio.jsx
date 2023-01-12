@@ -13,7 +13,9 @@ const Portfolio = () => {
       deployedLink: "https://still-cliffs-68409.herokuapp.com/dashboard/app",
       image: require('../../assets/starship.png'),
       fadeDuration:'1000',
-      description: 'StarShip provides users the platform to track stock market data. Users are able to track the market in general or they can search up a specific stock.'
+      description: 'StarShip provides users the platform to track stock market data. Users are able to track the market in general or they can search up a specific stock.',
+      toolsUsed: ['React','MongoDb','NodeJs','Express','MUI','GraphQl', 'JWT', 'PWA']
+    
     },
     {
       name: "chatter",
@@ -21,27 +23,31 @@ const Portfolio = () => {
       image: require('../../assets/chatter.png'),
       description: "Welcome to Chatter, a social media application that allows users to connect and interact with each other in real-time.",
       fadeDuration: "1100",
+      toolsUsed: ['React','MongoDb','NodeJs','Express','MUI', 'JWT','Web sockets']
     },
     {
       name : "weBlog",
       deployedLink: "https://bloggersintech.herokuapp.com/login",
       image: require('../../assets/weBlog.png'),
       fadeDuration:'1200',
-      description:"CMS-style blog site that can publish articles, blog posts, thoughts and opinions"
+      description:"CMS-style blog site that can publish articles, blog posts, thoughts and opinions",
+      toolsUsed: ['Handlebars','mySQl','NodeJs','Express','Bootstrap','sequelize']
     },
     {
       name:"BERG-Maps",
       deployedLink: "https://for-timi.github.io/BERG-Maps/",
       image: require('../../assets/berg.png'),
       fadeDuration:'1300',
-      description:"A web application designed to allow users to get directions and uses real-time traffic information to find the best route to your destination."
+      description:"A web application designed to allow users to get directions and uses real-time traffic information to find the best route to your destination.",
+      toolsUsed: ['Mapbox API','tailwind','HTML/CSS','localStorage']
     },
     {
       name: "AutoAuto",
       deployedLink: "https://stormy-wildwood-35895.herokuapp.com/",
       image: require('../../assets/autoAuto.png'),
       fadeDuration:'1400',
-      description:"A full stack web application that allows users to buy cars, book test drives and so much more"
+      description:"A full stack web application that allows users to buy cars, book test drives and so much more",
+      toolsUsed: ['Handlebars','mySQl','NodeJs','Express','Bootstrap','sequelize']
     },
     
     {
@@ -49,7 +55,8 @@ const Portfolio = () => {
       deployedLink: "https://salty-everglades-36024.herokuapp.com/",
       image: require('../../assets/text-editor.png'),
       fadeDuration:'1500',
-      description:"A Progressive web application that allows users to create notes or code snippets with or without an internet connection so they can reliably retrieve them for later use"
+      description:"A Progressive web application that allows users to create notes or code snippets with or without an internet connection so they can reliably retrieve them for later use",
+      toolsUsed: ['indexDb','HTML/CSS','localStorage','Webpack']
     }
   ]
 
@@ -69,7 +76,7 @@ const Portfolio = () => {
         <div className="container portfolio__container">
 
          { 
-          projects.map( ({name,image,deployedLink,description, fadeDuration}) => (
+          projects.map( ({name,image,deployedLink,description,toolsUsed, fadeDuration}) => (
           <article className='portfolio__item' key={name} data-aos="fade-up" data-aos-anchor=".portfolio__container"  data-aos-duration={fadeDuration}
           >
               <div className="portfolio__item-image">
@@ -77,7 +84,7 @@ const Portfolio = () => {
               </div>
               <h3
                className='portfolio__item-name'
-               onClick={() => handleClick({name,image,deployedLink, description})}
+               onClick={() => handleClick({name,image,deployedLink, toolsUsed, description})}
               >{name}</h3>
 
               <div className="portfolio__item-cta">

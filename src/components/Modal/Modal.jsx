@@ -5,7 +5,7 @@ import {BsPatchCheckFill} from 'react-icons/bs'
 
 const Modal = ({ closeModal, project }) => {
    
-  const {name,image,deployedLink,description} = project;
+  const {name,image,deployedLink,description, toolsUsed} = project;
 
   return (
     <>
@@ -42,30 +42,12 @@ const Modal = ({ closeModal, project }) => {
           <div className="modal-tools__container">       
               <h4 className='modal-tools__header'>Tools Used</h4>
               <ul className="modal-tools">
-                    <li className='modal-tool__item'>
+                    {toolsUsed.map((tool,i) => (
+                      <li key={i} className='modal-tool__item'>
                       <BsPatchCheckFill className="modal__tools-icon"/>
-                      <small>Jwt</small>
+                      <small>{tool}</small>
                     </li>
-                    <li className='modal-tool__item'>
-                      <BsPatchCheckFill className="modal__tools-icon"/>
-                      <small>MongoDB</small>
-                    </li>
-                    <li className='modal-tool__item'>
-                      <BsPatchCheckFill className="modal__tools-icon"/>
-                      <small>NodeJs</small>
-                    </li>
-                    <li className='modal-tool__item'>
-                      <BsPatchCheckFill className="modal__tools-icon"/>
-                      <small>ExpressJs</small>
-                    </li>
-                    <li className='modal-tool__item'>
-                      <BsPatchCheckFill className="modal__tools-icon"/>
-                      <small>React</small>
-                    </li>
-                    <li className='modal-tool__item'>
-                      <BsPatchCheckFill className="modal__tools-icon"/>
-                      <small>Mui</small>
-                    </li>
+                    ))}
                 </ul>
           </div>
 
