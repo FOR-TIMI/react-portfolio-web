@@ -53,7 +53,8 @@ A responsive, single page application for developers to showcase their skills
   To customize the colors to the colors you want, CSS variables are used in the [index.css file](https://github.com/FOR-TIMI/react-portfolio-web/blob/main/src/index.css). There you can update the variables to set your custom colors
    - ### Background Color: <br>
       To set a new background color, update the `--color-bg` CSS variable and set your custom color in rbg, hex,hsl.
-     ```:root{
+     ```
+     :root{
      --color-bg: YOUR CUSTOM COLOR CODE; //This line
      }
       ```
