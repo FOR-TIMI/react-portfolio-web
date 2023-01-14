@@ -137,7 +137,9 @@ A responsive, single page application for developers to showcase their skills
         name : {PROJECT NAME} , //Must match the name of the project on github
         deployedLink: "{LINK}", //Deployed link of your project
         image: require('../../assets/{THE IMAGE RELATED TO THIS PROJECT}'),
-        fadeDuration:{ANIMATION SPEED} // To set the animation speed.
+        fadeDuration:{ANIMATION SPEED}, // To set the animation speed
+        description: //description of your project. Expects a string
+        toolsUsed: [] // tools used expects an array of Strings to represent each tool
       }
     ]
      
