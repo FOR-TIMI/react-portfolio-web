@@ -225,7 +225,7 @@ A responsive, single page application for developers to showcase their skills
 
 
 ## website
-https://for-timi.github.io/react-portfolio-web/
+https://timi.codes/
 
 ## Contribution
 Made with ❤️ by Timi
