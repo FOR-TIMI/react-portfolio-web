@@ -1,7 +1,7 @@
 # A Developer's Portfolio - Built with react
 
 ## Description
-Deployed portfolio of work samples, about me, contact built with React
+Deployed portfolio that consists work samples, about me section, contact section that sends an email directly to the developer and so much more built with React
 
 ## Support the project ⭐
 If you're feeling great and want to show your support, please consider checking out my other projects, giving this repository a star, and sharing it with others. This helps me to gain visibility and grow our community. Thank you in advance for your support. 🙏
